@@ -6,6 +6,8 @@ layout: home
 
 ---
 
-Hello welcome to my page. 
-
+Hello welcome to my page. \
 My name is Hengky Kurniawan. I am a researcher. 
+
+If you want to make this happen, then you have to chase it. \
+I want this thing. 
