@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Shanghai memebuka dikir"
 date:   2022-05-31 10:24:15 +0200
 categories: jekyll update
 ---
