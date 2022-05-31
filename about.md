@@ -1,14 +1,9 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 Welcome to my site. I compile my classes' material in this page. 
-
-
-
-
-
 
 
 

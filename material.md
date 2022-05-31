@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Material
-permalink: /material/
+permalink: /material
 ---
 Silahkan unduh material di bawah ini.
