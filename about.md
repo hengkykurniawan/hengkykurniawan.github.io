@@ -9,6 +9,7 @@ This page is about something special on my side.
 - Manuasia
 - kodok
 - setann 
+- kodo monyek
 
 lihat disini [posing say](/research)
 
