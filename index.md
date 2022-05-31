@@ -5,4 +5,5 @@
 layout: home
 ---
 
-Selamat datang di situs saya. 
+Selamat datang di situs saya.  
+Silahkan melihat-lihat.
