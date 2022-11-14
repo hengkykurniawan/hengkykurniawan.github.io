@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Silahkan unduh berikut"
+title:  "Pelajaran penting hari ini"
 date:   2022-11-14 10:57:25 
 categories: jekyll update
 ---
