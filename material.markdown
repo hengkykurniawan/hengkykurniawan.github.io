@@ -10,8 +10,10 @@ Kalau mau download silahkan ya..
 
 # Pertama harus lapor
 > Kirim email ke sini, terus jangan liat
-> kirim kesana
+
+	Kirim kesana 
 	kalau mau juga
-> SIapa pun yang mau .
+	
+	SIapa pun yang mau .
 
  
