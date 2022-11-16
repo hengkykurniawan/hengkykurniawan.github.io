@@ -1,10 +1,14 @@
 ---
-layout: post
-title:  "Magapa tidak berkena???"
-author: hengky
-date:   2022-11-14 11:57:25 
-image: http://3.bp.blogspot.com/-n08ntobMBhI/UMTDReijN0I/AAAAAAAABqg/MIUudl42aSQ/s1600/black+and+white+scenic+landscape+wallpaper+hd+%2813%29.jpg
+
 ---
+
+\-\--
+layout: post
+title: "Magapa tidak berkena???"
+author: hengky
+date: 2022-11-14 11:57:25
+image: http://3.bp.blogspot.com/-n08ntobMBhI/UMTDReijN0I/AAAAAAAABqg/MIUudl42aSQ/s1600/black+and+white+scenic+landscape+wallpaper+hd+%2813%29.jpg
+\-\--
 
 Provinsi Papua Selatan, Papua Pegunungan, dan Papua Tengah resmi dibentuk. Kini, saatnya bekerja mewujudkan harapan dari pembentukan tiga provinsi itu.
 
