@@ -26,7 +26,7 @@ If we write the following equation, then we'll get the following:
   X=\alpha X_0^2 + \beta X_1^2 + \phi X_3^3 + \epsilon_i
  \end{equation}
  
-
+						
  
  
 -----------------------
