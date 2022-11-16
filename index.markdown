@@ -17,16 +17,11 @@ Sementara yang tidak mengambil gak harus bawa pulang sih $ E=MC^2$
 
 If we write the following equation, then we'll get the following:
  
-```
- \begin{equation}
-  X=\alpha X_0^2 + \beta X_1^2 + \phi X_3^3 + \epsilon_i
- \end{equation}
-```
- \begin{equation}
-  X=\alpha X_0^2 + \beta X_1^2 + \phi X_3^3 + \epsilon_i
- \end{equation}
+  
+\begin{equation}
+X=\alpha X_0^2 + \beta X_1^2 + \phi X_3^3 + \epsilon_i
+\end{equation}
  
-						
  
  
 -----------------------
