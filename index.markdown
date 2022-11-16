@@ -5,7 +5,7 @@ layout: home
 ---
 Yang mengambil kelas pengantar mata kuliah Bersama harus mengisi data dibawah ini
 
-Masuk ke [**daftar kelas**](class).
+Masuk ke [**daftar kelas**](febui).
 
 Sementara handout dapat dibaca atau didownloaddata disini: [**Handout micro2**](microeconomics2)
 
