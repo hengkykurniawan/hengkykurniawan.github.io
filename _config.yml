@@ -41,7 +41,8 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyyl-sitemap
+  - jekyll-sitemap
+  - jekyll-spaceship
 
 
 # Exclude from processing.
