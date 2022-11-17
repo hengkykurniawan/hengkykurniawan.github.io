@@ -9,7 +9,7 @@ Masuk ke [**daftar kelas**](febui).
 
 Sementara handout dapat dibaca atau didownloaddata disini: [**Handout micro2**](microeconomics2)
 
-Sementara yang tidak mengambil gak harus bawa pulang sih $ E=MC^2$
+Sementara yang tidak mengambil gak harus bawa pulang sih $E=MC^2$
 
 
 
@@ -18,10 +18,8 @@ Sementara yang tidak mengambil gak harus bawa pulang sih $ E=MC^2$
 If we write the following equation, then we'll get the following:
  
   
-\begin{equation}
-X=\alpha X_0^2 + \beta X_1^2 + \phi X_3^3 + \epsilon_i
-\end{equation}
- 
+$$X=\alpha X_0^2 + \beta X_1^2 + \phi X_3^3 + \epsilon_i
+$$ 
  
  
 -----------------------
