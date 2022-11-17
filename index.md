@@ -5,9 +5,9 @@ layout: home
 ---
 Yang mengambil kelas pengantar mata kuliah Bersama harus mengisi data dibawah ini
 
-Masuk ke [**daftar kelas**](febui).
+Masuk ke [**daftar kelas**](ETS).
 
-Sementara handout dapat dibaca atau didownloaddata disini: [**Handout micro2**](microeconomics2)
+Sementara handout dapat dibaca atau didownload data disini: [**Handout micro2**](microeconomics2)
 
 Sementara yang tidak mengambil gak harus bawa pulang sih $E=MC^2$
 
