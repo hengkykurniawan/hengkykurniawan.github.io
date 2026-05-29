@@ -168,6 +168,38 @@ $m-k$ is the number of surplus instruments. A large $J$ (small $p$-value)
 signals that at least one instrument is invalid. Note the test assumes *some*
 instruments are valid; it cannot rescue a model where all of them are suspect.
 
+## What does IV actually estimate? The LATE
+
+So far we have written $\beta_1$ as if it were a single number that applies to
+everyone. But causal effects often **differ across individuals**, and once they
+do, IV no longer recovers the average effect in the whole population. Imbens and
+Angrist showed that, under one extra assumption, IV estimates a very specific
+quantity: the **Local Average Treatment Effect (LATE)**.
+
+The extra assumption is **monotonicity**: the instrument moves everyone in the
+same direction (it can push people into treatment but never out). Under
+relevance, exclusion, and monotonicity, the IV estimator converges to
+
+$$
+\hat{\beta}_1^{IV} \;\xrightarrow{p}\;
+\mathbb{E}\!\left[\, Y_i(1) - Y_i(0) \;\middle|\; \text{compliers} \,\right],
+$$
+
+where $Y_i(1)$ and $Y_i(0)$ are the potential outcomes with and without
+treatment. The population splits into three groups: **compliers**, who take the
+treatment only when the instrument nudges them; **always-takers**; and
+**never-takers**. IV identifies the effect for the **compliers alone** — the
+people whose behaviour the instrument actually changes.
+
+This has a sharp practical implication. Two valid instruments for the same
+regressor can give different IV estimates, not because either is wrong, but
+because each induces a *different* group of compliers. The quarter-of-birth
+instrument, for instance, estimates the return to schooling for those whose
+education was bound by compulsory-attendance laws — teenagers on the margin of
+dropping out — not the return for a prospective PhD student. The LATE is causal
+and well defined, but it is **local**: always ask *whose* effect the instrument
+is estimating before generalising the result.
+
 ## Takeaways
 
 Instrumental variables turn an untestable correlation problem into a research
