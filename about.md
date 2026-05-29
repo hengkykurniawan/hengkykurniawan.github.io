@@ -4,7 +4,7 @@ title: About
 permalink: /about
 ---
 
-Hi, I'm **Hengky Kurniawan** — an economist.
+Hi, I'm **buakia** — an economist.
 
 I earned my training in economics at the **University of Indonesia (UI)** and at
 the **Vrije Universiteit Amsterdam (VU)**, where I built my foundations in
