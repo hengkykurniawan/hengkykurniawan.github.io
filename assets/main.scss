@@ -1,0 +1,186 @@
+---
+# Custom stylesheet — overrides the minima theme with a marine blue design.
+# The front matter (these dashes) is required so Jekyll processes the SCSS.
+---
+
+// ----------------------------------------------------------------------------
+//  Marine blue palette
+// ----------------------------------------------------------------------------
+$marine-deep:   #012a4a;   // darkest — headings / header background
+$marine-dark:   #013a63;
+$marine:        #01497c;   // primary brand
+$marine-mid:    #2a6f97;
+$marine-soft:   #2c7da0;   // links / accents
+$marine-light:  #61a5c2;
+$marine-pale:   #a9d6e5;
+$marine-mist:   #f3f8fb;   // page background tint
+
+// ----------------------------------------------------------------------------
+//  Override minima's SCSS variables (must come before the import)
+// ----------------------------------------------------------------------------
+$brand-color:       $marine-soft;
+$background-color:   $marine-mist;
+$text-color:        #1b2733;
+$link-base-color:    $marine;
+$link-visited-color: $marine-mid;
+$link-hover-color:   $marine-deep;
+
+$base-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   17px;
+$base-line-height: 1.7;
+
+// Pull in the base theme with our overrides applied
+@import "minima";
+
+// ----------------------------------------------------------------------------
+//  Custom marine blue styling
+// ----------------------------------------------------------------------------
+
+body {
+  background:
+    linear-gradient(180deg, rgba($marine-pale, .35) 0%, rgba($marine-mist, 0) 320px),
+    $marine-mist;
+}
+
+// --- Header / site nav --------------------------------------------------------
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid darken($marine, 6%);
+  background: linear-gradient(120deg, $marine-deep 0%, $marine 55%, $marine-soft 100%);
+  box-shadow: 0 2px 12px rgba($marine-deep, .25);
+
+  .site-title,
+  .site-title:visited {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: .3px;
+  }
+  .site-title:hover { color: $marine-pale; text-decoration: none; }
+
+  .site-nav {
+    background: transparent;
+    border: none;
+
+    .page-link,
+    .page-link:visited {
+      color: rgba(#ffffff, .9);
+      font-weight: 500;
+    }
+    .page-link:hover { color: #ffffff; text-decoration: none; }
+
+    // mobile dropdown
+    @media screen and (max-width: 600px) {
+      background: $marine;
+      border: 1px solid darken($marine, 8%);
+      .menu-icon > svg { fill: #ffffff; }
+      .page-link { color: #ffffff; }
+    }
+  }
+}
+
+// --- Links --------------------------------------------------------------------
+.page-content a,
+.post-content a {
+  color: $marine;
+  text-decoration: none;
+  border-bottom: 1px solid rgba($marine-light, .6);
+  transition: color .15s ease, border-color .15s ease;
+
+  &:hover {
+    color: $marine-deep;
+    border-bottom-color: $marine-soft;
+    text-decoration: none;
+  }
+}
+
+// --- Headings -----------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 { color: $marine-dark; }
+
+h1 { font-weight: 700; }
+
+h2 {
+  margin-top: 1.6em;
+  padding-bottom: .25em;
+  border-bottom: 2px solid rgba($marine-light, .5);
+}
+
+// --- Content card -------------------------------------------------------------
+.page-content .wrapper {
+  background: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2.2rem 2.4rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba($marine-deep, .08);
+  border: 1px solid rgba($marine-light, .25);
+}
+
+@media screen and (max-width: 600px) {
+  .page-content .wrapper { padding: 1.4rem 1.2rem; }
+}
+
+// --- Blockquotes & code -------------------------------------------------------
+blockquote {
+  color: $marine-mid;
+  border-left: 4px solid $marine-soft;
+  background: rgba($marine-pale, .18);
+  padding: .6em 1em;
+  border-radius: 0 8px 8px 0;
+  font-style: normal;
+}
+
+pre, code {
+  border-radius: 8px;
+  border-color: rgba($marine-light, .45);
+}
+pre { background: #f1f7fb; }
+
+// --- Horizontal rule ----------------------------------------------------------
+hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, $marine-light, transparent);
+  margin: 2.2em 0;
+}
+
+// --- Home / post list ---------------------------------------------------------
+.post-list > li {
+  background: #ffffff;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.2rem;
+  border-radius: 12px;
+  border: 1px solid rgba($marine-light, .25);
+  box-shadow: 0 4px 16px rgba($marine-deep, .06);
+  transition: transform .15s ease, box-shadow .15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba($marine-deep, .12);
+  }
+}
+.post-link { color: $marine-dark; font-weight: 600; }
+.post-meta { color: $marine-mid; }
+
+// --- Footer -------------------------------------------------------------------
+.site-footer {
+  border-top: 4px solid $marine-soft;
+  background: $marine-deep;
+  color: rgba(#ffffff, .85);
+  margin-top: 3rem;
+
+  .footer-heading,
+  a, a:visited { color: #ffffff; }
+  a:hover { color: $marine-pale; }
+  .footer-col-wrapper { color: rgba(#ffffff, .8); }
+  .svg-icon { fill: rgba(#ffffff, .85); }
+}
+
+// --- Buttons (links styled as buttons via **bold link** convention) ----------
+// Tables get a marine accent too
+table th {
+  background: $marine;
+  color: #ffffff;
+  border-color: $marine-dark;
+}
+table td { border-color: rgba($marine-light, .4); }
+table tr:nth-child(even) { background: rgba($marine-pale, .15); }
