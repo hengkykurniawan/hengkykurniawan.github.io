@@ -30,11 +30,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:  
 github_username:   
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-# header_pages:
-    # - about.markdown
-    # - material.markdown
+# Link these pages in the header, in this order.
+header_pages:
+  - blog.md
+  - about.md
+  - material.md
+  - research.md
 
 # Build settings
 theme: minima
