@@ -1,7 +1,7 @@
 ---
 layout:  page
 title: Material
-permalink: /material/
+permalink: /material
 ---
 
 Material ada disini. 

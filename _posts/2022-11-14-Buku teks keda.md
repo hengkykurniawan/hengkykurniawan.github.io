@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Magapa tidak berkena???"
+title: "Magapa tidak berkenal???"
 author: hengky
 date: 2022-11-14 11:57:25
 image: http://3.bp.blogspot.com/-n08ntobMBhI/UMTDReijN0I/AAAAAAAABqg/MIUudl42aSQ/s1600/black+and+white+scenic+landscape+wallpaper+hd+%2813%29.jpg
