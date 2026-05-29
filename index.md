@@ -3,6 +3,24 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+<section class="profile-hero">
+  <div class="profile-avatar">{{ site.author.initials | default: "HK" }}</div>
+  <div class="profile-body">
+    <h1 class="profile-name">{{ site.author.name | default: site.title }}</h1>
+    <p class="profile-role">{{ site.author.role }}</p>
+    <p class="profile-affil">{{ site.author.affiliation }}</p>
+    <p class="profile-tagline">{{ site.description }}</p>
+    <div class="profile-links">
+      <a class="profile-btn" href="{{ '/about' | relative_url }}">About</a>
+      <a class="profile-btn" href="{{ '/blog' | relative_url }}">Blog</a>
+      <a class="profile-btn" href="{{ '/research' | relative_url }}">Research</a>
+      <a class="profile-btn" href="mailto:{{ site.email }}">Email</a>
+      {% if site.github_username %}<a class="profile-btn profile-btn--ghost" href="https://github.com/{{ site.github_username }}">GitHub</a>{% endif %}
+    </div>
+  </div>
+</section>
+
 Yang mengambil kelas pengantar mata kuliah Bersama harus mengisi data dibawah ini.
 Masuk ke [**daftar kelas**](ETS).
 
