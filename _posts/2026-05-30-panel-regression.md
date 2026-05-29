@@ -144,6 +144,48 @@ correlated over time. To get valid inference we therefore report **standard
 errors clustered by unit**, which allow for arbitrary correlation within each
 $i$ while assuming independence across units.
 
+## Dynamic panels: when the past predicts the present
+
+In many economic settings the outcome depends on its own history — current
+employment depends on last year's employment, current debt on past debt. We then
+add a **lagged dependent variable** to the model:
+
+$$
+y_{it} = \rho\, y_{i,t-1} + \boldsymbol{\beta}^{\top}\mathbf{x}_{it} + c_i + u_{it},
+\qquad |\rho| < 1.
+$$
+
+This innocent-looking term breaks fixed effects. After the within
+transformation, the demeaned regressor $y_{i,t-1} - \bar{y}_i$ is mechanically
+correlated with the demeaned error $u_{it} - \bar{u}_i$, because $\bar{y}_i$
+contains $y_{i,t-1}$ and $\bar{u}_i$ contains $u_{i,t-1}$. The result is the
+**Nickell bias**, which is of order $1/T$ and does not disappear as $N$ grows.
+
+The standard fix is the **Arellano–Bond** estimator. It first-differences the
+equation to remove $c_i$,
+
+$$
+\Delta y_{it} = \rho\, \Delta y_{i,t-1} + \boldsymbol{\beta}^{\top}\Delta\mathbf{x}_{it} + \Delta u_{it},
+$$
+
+and then instruments the differenced lag $\Delta y_{i,t-1}$ with **deeper lags**
+in levels ($y_{i,t-2}, y_{i,t-3}, \dots$), which are correlated with the
+regressor but orthogonal to $\Delta u_{it}$. Estimation proceeds by the
+**generalized method of moments (GMM)**, choosing $\hat{\boldsymbol{\theta}}$ to
+minimise the quadratic form
+
+$$
+\hat{\boldsymbol{\theta}} = \arg\min_{\boldsymbol{\theta}}\;
+\left(\tfrac{1}{N}\sum_i \mathbf{Z}_i^{\top}\Delta\hat{u}_i\right)^{\top}
+\mathbf{W}
+\left(\tfrac{1}{N}\sum_i \mathbf{Z}_i^{\top}\Delta\hat{u}_i\right),
+$$
+
+where $\mathbf{Z}_i$ is the matrix of instruments and $\mathbf{W}$ a weighting
+matrix. Validity rests on the moment conditions
+$\mathbb{E}[\mathbf{Z}_i^{\top}\Delta u_i] = 0$, routinely checked with the
+**Sargan/Hansen** over-identification test.
+
 ## Takeaways
 
 Panel regression turns repeated observations into a tool for controlling
