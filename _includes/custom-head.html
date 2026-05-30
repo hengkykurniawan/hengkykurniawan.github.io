@@ -1,0 +1,21 @@
+{%- comment -%}
+  MathJax loader — renders $...$ (inline) and $$...$$ (display) equations in the
+  browser. Loaded directly here (not via a Jekyll plugin) so it works on the
+  classic GitHub Pages build, which does not run jekyll-spaceship.
+  NOTE: deliberately does NOT use polyfill.io (that domain was discontinued in
+  2024); modern browsers do not need it for MathJax 3.
+{%- endcomment -%}
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  };
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

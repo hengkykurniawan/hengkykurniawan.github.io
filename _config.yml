@@ -54,7 +54,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-spaceship
 
 
 # Exclude from processing.
