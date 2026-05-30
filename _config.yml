@@ -43,8 +43,8 @@ author:
 
 # Link these pages in the header, in this order.
 header_pages:
-  - blog.md
   - about.md
+  - blog.md
   - material.md
   - research.md
 
