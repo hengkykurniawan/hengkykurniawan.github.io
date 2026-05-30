@@ -12,8 +12,17 @@ permalink: /research
 
 ## Publications
 
-The list below is generated automatically from
-[`_bibliography/papers.bib`](https://github.com/{{ site.github_username }}/{{ site.github_username }}.github.io/blob/main/_bibliography/papers.bib).
-To add a paper, just drop its BibTeX entry into that file.
+> *Replace the placeholder entries below with your own work.*
 
-{% bibliography %}
+- **An Example Journal Article on Panel Data Methods**, *Journal of Applied
+  Economics*, 12(2), 101–128, 2026. [DOI](#) · [PDF](#)
+- **An Example Book Chapter**, in *Handbook of Development Economics*, Example
+  Press, 45–72, 2025.
+
+## Working papers
+
+- **An Example Working Paper** (2024). [PDF](#)
+
+## Work in progress
+
+- A new project on …

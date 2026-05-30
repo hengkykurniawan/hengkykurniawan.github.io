@@ -55,19 +55,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-spaceship
-  - jekyll-scholar
-
-# jekyll-scholar: render publications from a BibTeX (.bib) file.
-# NOTE: this plugin is NOT supported by GitHub Pages' classic build — it only
-# works through the GitHub Actions workflow in .github/workflows/jekyll.yml.
-scholar:
-  style: apa                 # citation style (apa, chicago-author-date, ieee, ...)
-  locale: en
-  source: ./_bibliography    # folder holding the .bib file(s)
-  bibliography: papers.bib    # the bibliography file
-  sort_by: year
-  order: descending
-  bibliography_template: bib
 
 
 # Exclude from processing.
