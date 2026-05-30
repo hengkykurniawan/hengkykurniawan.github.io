@@ -18,10 +18,8 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-spaceship'   # renders $...$ / $$...$$ math at build time
 end
-# Note: math equations are rendered with MathJax (loaded in
-# _includes/custom-head.html), so no math plugin is required. This keeps the
-# build compatible with both GitHub Actions and the classic GitHub Pages build.
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
