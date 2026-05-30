@@ -25,6 +25,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   
 show_excerpts: false # set to true to show excerpts on the homepage
 
+# Publish posts even if their date is in the future relative to the build
+# server's clock. Without this, Jekyll silently skips future-dated posts.
+future: true
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hengkykurniawan.github.io" # the base hostname & protocol for your site
 twitter_username:
